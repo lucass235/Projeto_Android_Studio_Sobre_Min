@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tela do porocas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="#CCC4FD"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-4dp">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="194dp"
-        android:layout_height="275dp"
+        android:id="@+id/imgPerfil"
+        android:layout_width="126dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082"
         app:srcCompat="@drawable/eu"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="39dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aqui voce encontra tudo sobre a vida do poroca"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="391dp"
-        tools:ignore="MissingConstraints" />
+        android:text="@string/text_name"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imgPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/btnShowAboutMe"
+        android:layout_width="102dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@null"
+        android:text="@string/btn_show_about_me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
