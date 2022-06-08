@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Tela Lucas</string>
     <string name="btn_show_about_me">Sobre Min</string>
+    <string name="btn_show_coreer">Dados Profissionais</string>
+    <string name="btn_show_technologie">Tecnologias</string>
     <string name="text_name">Lucas dos Santos</string>
 </resources>

@@ -13,9 +13,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="341dp"
-        android:layout_height="62dp"
-        android:text="Lucas dos Santos Amorim Rêgo"
+        android:layout_width="236dp"
+        android:layout_height="35dp"
+        android:text="Meus Dados Profissionais"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="364dp"
-        android:text="Me chamo Lucas, tenho 22 anos, sou estudante de ciência da computação na Universidade Cátolica de Pernambuco. Atualmente estou no 5º perído do curso."
+        android:text="Atualmente estou Estagiando na Empresa Direction Systems, la eu trabalho com implementações de sites e aplicativos mobile. Meu foco hoje é estudar as tecnologias da área de programação Front-End."
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

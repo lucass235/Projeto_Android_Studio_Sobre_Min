@@ -10,6 +10,19 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="-4dp">
 
+    <Button
+        android:id="@+id/btnShowCoreer"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@null"
+        android:text="@string/btn_show_coreer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466" />
+
     <ImageView
         android:id="@+id/imgPerfil"
         android:layout_width="126dp"
@@ -38,8 +51,8 @@
 
     <Button
         android:id="@+id/btnShowAboutMe"
-        android:layout_width="102dp"
-        android:layout_height="40dp"
+        android:layout_width="141dp"
+        android:layout_height="56dp"
         android:layout_marginStart="32dp"
         android:background="@drawable/bg_button"
         android:backgroundTint="@null"
@@ -48,5 +61,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.363" />
+
+    <Button
+        android:id="@+id/btnShowTechnologie"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@null"
+        android:text="@string/btn_show_technologie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
