@@ -1,5 +1,7 @@
 package com.example.telalucas
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.telalucas.databinding.ActivityMainBinding
@@ -23,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnShowCoreer.setOnClickListener{showModalCoreer()}
 
         binding.btnShowTechnologie.setOnClickListener{showModalTechnologie()}
+
+        binding.btnSite.setOnClickListener{showSite()}
 
     }
 
@@ -54,6 +58,10 @@ class MainActivity : AppCompatActivity() {
 
         dialog.setContentView(modalTechnologie.root)
         dialog.show()
+    }
+
+    private  fun showSite() {
+        startActivity( Intent(Intent.ACTION_VIEW, Uri.parse("https://portifolio-programacao-web.vercel.app/")));
     }
 
 }

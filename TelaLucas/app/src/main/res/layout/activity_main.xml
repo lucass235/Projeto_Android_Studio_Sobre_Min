@@ -11,43 +11,48 @@
     tools:layout_editor_absoluteY="-4dp">
 
     <Button
-        android:id="@+id/btnShowCoreer"
+        android:id="@+id/btnSite"
         android:layout_width="142dp"
         android:layout_height="56dp"
-        android:layout_marginStart="32dp"
         android:background="@drawable/bg_button"
         android:backgroundTint="@null"
-        android:text="@string/btn_show_coreer"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
-
-    <ImageView
-        android:id="@+id/imgPerfil"
-        android:layout_width="126dp"
-        android:layout_height="175dp"
+        android:text="@string/btn_show_site"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082"
-        app:srcCompat="@drawable/eu"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.822" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/eu"
+        app:civ_border_color="#00000000"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_name"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/text_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
         android:text="@string/text_name"
-        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/imgPerfil"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/btnShowAboutMe"
@@ -60,7 +65,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.363" />
+        app:layout_constraintVertical_bias="0.472" />
 
     <Button
         android:id="@+id/btnShowTechnologie"
@@ -73,6 +78,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.696" />
+
+    <Button
+        android:id="@+id/btnShowCoreer"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bg_button"
+        android:backgroundTint="@null"
+        android:text="@string/btn_show_coreer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
